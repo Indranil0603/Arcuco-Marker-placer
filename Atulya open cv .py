@@ -25,7 +25,7 @@ def colour(value): #This function takes the BGR values of the pixel as input and
         return None
 
 markers = {}  #Dictonary for storing aruco markers
-for i in ["Ha", "HaHa","LMAO","XD"]:
+for i in ["1", "2","3","4"]:
     img = cv2.imread(f"Images//{i}.jpg")
     a, b= findaruco(img) #The corners and the id of the aruco markers is extracted
     slope = (a[0][0][1][1]- a[0][0][0][1])/(a[0][0][1][0]- a[0][0][0][0]) 
